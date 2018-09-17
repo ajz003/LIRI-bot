@@ -22,7 +22,6 @@ if (command === "do-what-it-says") {
     whatDo();
 }
 
-
 // ---------- Functions
 
 function whatDo() {
@@ -47,12 +46,11 @@ function whatDo() {
     if (command === "concert-this") {
         request('https://rest.bandsintown.com/artists/' + input + '/events?app_id=codingbootcamp', function (error, response, body) {
             if (!error && response.statusCode === 200) {
-                console.log(body)
                 var event = JSON.parse(body);
                 for (var i = 0; i < event.length; i++) {
-                    console.log("Venue: " + event[0].venue.name);
-                    console.log("Location: " + event[0].venue.city + ", " + event[0].venue.country);
-                    console.log("Date: " + moment(event[0].datetime).format('MM/DD/YYYY'));
+                    console.log("Venue: " + event[i].venue.name);
+                    console.log("Location: " + event[i].venue.city + ", " + event[i].venue.country);
+                    console.log("Date: " + moment(event[i].datetime).format('MM/DD/YYYY'));
                     console.log("-------------------------------------");
                 }
             }
