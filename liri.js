@@ -16,6 +16,7 @@ if (command === "do-what-it-says") {
         var dataArr = data.split(",");
         command = dataArr[0];
         input = dataArr[1];
+        process.argv[3] = input;
         whatDo();
     });
 } else {

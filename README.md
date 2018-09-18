@@ -35,7 +35,6 @@ npm install
 
 ### Spotify
 
-1. 
 ```
 node liri.js spotify-this-song '<song name here>'
 ```
@@ -49,8 +48,6 @@ This will show the following information about the song in your terminal/bash wi
 
 
 ### Movie
-
-2. 
 
 ```
 node liri.js movie-this '<movie name here>'
@@ -69,7 +66,6 @@ This will output the following information to your terminal/bash window:
 
 ### Concert
 
-3. 
 
 ```
 node liri.js concert-this <artist/band name here>
@@ -86,7 +82,6 @@ This will search the Bands in Town Artist Events API ("https://rest.bandsintown.
 
 ### Custom commands
 
-4. 
 ```
 node liri.js do-what-it-says
 ```
